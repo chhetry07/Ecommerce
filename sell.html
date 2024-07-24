@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Item - Artisan Alley</title>
+    <link rel="stylesheet" href="sell.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <h1>Artisan Alley</h1>
+        </div>
+    </header>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <div class="sidenav">
+        <label for="menu-toggle" class="closebtn">&times;</label>
+        <h2>Artisan Alley</h2>
+        <a href="mainPage.html">Home</a>
+        <a href="buy.html">Buy Products</a>
+        <a href="sell.html">Sell Products</a>
+        <a href="about.html">About Us</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <main>
+        <div class="background-image">
+            <div class="content-center">
+                <h1>Sell Your Item</h1>
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="picture">Item Picture:</label><br>
+                    <input type="file" id="picture" name="picture" accept="image/*" required><br><br>
+
+                    <label for="cost">Item Cost:</label><br>
+                    <input type="number" id="cost" name="cost" required><br><br>
+
+                    <label for="description">Item Description:</label><br>
+                    <textarea id="description" name="description" rows="4" required></textarea><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Artisan Alley</p>
+    </footer>
+</body>
+</html>
